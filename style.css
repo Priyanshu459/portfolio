@@ -1,0 +1,122 @@
+
+        /* Base styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Typography */
+        h1, h2, h3 { margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        
+        /* Layout */
+        header { padding: 80px 0 40px; text-align: center; }
+        section { padding: 30px 0; }
+        
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav li { margin: 0 15px; }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover { color: #0066ff; }
+        
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .project-card {
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover { transform: translateY(-5px); }
+        
+        /* About & Skills */
+        .about-flex {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill-tag {
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact */
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea { height: 100px; }
+        button {
+            background-color: #0066ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .about-flex { flex-direction: column; text-align: center; }
+            .profile-pic { margin: 0 auto; }
+        }
+   
